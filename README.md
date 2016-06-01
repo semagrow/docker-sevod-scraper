@@ -20,7 +20,7 @@ where:
 
 To run it against a Cassandra store issue
 
-    docker run --rm -it -v <path/to/output>:/output -v sevod-scraper cassandra <cassandra_ip> <cassandra_port> <keyspace> <base_url> /output/<output_name>
+    docker run --rm -it -v <path/to/output>:/output sevod-scraper cassandra <cassandra_ip> <cassandra_port> <keyspace> <base_url> /output/<output_name>
 
 where:
 * **path/to/output** the directory to write the output
