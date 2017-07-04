@@ -10,4 +10,6 @@ RUN git clone https://github.com/semagrow/sevod-scraper.git && \
 
 WORKDIR /sevod-scraper    
 
+COPY log4j.properties /sevod-scraper/target/classes/
+
 ENTRYPOINT ["/sevod-scraper/sevod-scraper.sh"]

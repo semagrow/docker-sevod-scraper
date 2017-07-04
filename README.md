@@ -29,3 +29,5 @@ where:
 * **keyspace** the Cassandra keyspace to scrap
 * **base_url** the base url to use in the output
 * **output_name** the the filename of the output which will be located at **/path/to/output**/output_name
+
+Log properties can be changed in `log4j.properties` file.
