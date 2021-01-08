@@ -12,9 +12,10 @@ RUN git clone https://github.com/semagrow/sevod-scraper.git \
 
 FROM openjdk:8-jre-slim-buster
 
-COPY --from=build /build/sevod-scraper /sevod-scraper
+COPY --from=build /build/sevod-scraper/assembly/target/bin /sevod-scraper/bin
+COPY --from=build /build/sevod-scraper/assembly/target/lib /sevod-scraper/lib
  
-WORKDIR /sevod-scraper/assembly/target/bin
+WORKDIR /sevod-scraper/bin
 
 COPY run-sevod-scraper.sh ./run-sevod-scraper.sh
 
